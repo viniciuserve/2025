@@ -1,0 +1,1176 @@
+
+@media all and (max-width: 1023px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1023px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1023px), only screen and (min-resolution: 192dpi) and (max-width: 1023px), only screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+	#cssmenu {
+		width: 100%;
+		position: absolute;
+		z-index: 1000;
+	}
+
+	#cssmenu ul {
+		width: 100%;
+		display: none;
+	}
+
+	#cssmenu.align-center > ul {
+		text-align: left;
+	}
+
+	#cssmenu ul li {
+		width: 100%;
+		border-top: 1px solid rgba(120, 120, 120, 0.2);
+	}
+
+	#cssmenu ul ul li,
+	#cssmenu li:hover > ul > li {
+		height: auto;
+	}
+
+	#cssmenu ul li a,
+	#cssmenu ul ul li a {
+		width: 100%;
+		border-bottom: 0;
+	}
+
+	#cssmenu > ul > li {
+		float: none;
+	}
+
+	#cssmenu ul ul li a {
+		padding-left: 25px;
+	}
+
+	#cssmenu ul ul ul li a {
+		padding-left: 35px;
+	}
+
+	#cssmenu ul ul li a {
+		color: #baada6;
+		background: none;
+	}
+
+	#cssmenu ul ul li:hover > a,
+	#cssmenu ul ul li.active > a {
+		color: #ffffff;
+	}
+
+	#cssmenu ul ul,
+	#cssmenu ul ul ul,
+	#cssmenu.align-right ul ul {
+		position: relative;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+
+	#cssmenu > ul > li.has-sub > a:after,
+	#cssmenu > ul > li.has-sub > a:before,
+	#cssmenu ul ul > li.has-sub > a:after,
+	#cssmenu ul ul > li.has-sub > a:before {
+		display: none;
+	}
+
+	#cssmenu #menu-button {
+		display: block;
+		padding: 26px;
+		color: #dddddd;
+		cursor: pointer;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	#cssmenu #menu-button:after {
+		position: absolute;
+		top: 22px;
+		right: 17px;
+		display: block;
+		height: 4px;
+		width: 20px;
+		border-top: 2px solid #baada6;
+		border-bottom: 2px solid #baada6;
+		content: '';
+	}
+
+	#cssmenu #menu-button:before {
+		position: absolute;
+		top: 16px;
+		right: 17px;
+		display: block;
+		height: 2px;
+		width: 20px;
+		background: #baada6;
+		content: '';
+	}
+
+	#cssmenu #menu-button.menu-opened:after {
+		top: 23px;
+		border: 0;
+		height: 2px;
+		width: 15px;
+		background: #baada6;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	#cssmenu #menu-button.menu-opened:before {
+		top: 23px;
+		background: #baada6;
+		width: 15px;
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	#cssmenu .submenu-button {
+		position: absolute;
+		z-index: 99;
+		right: 0;
+		top: 0;
+		display: block;
+		border-left: 1px solid rgba(120, 120, 120, 0.2);
+		height: 52px;
+		width: 52px;
+		cursor: pointer;
+	}
+
+	#cssmenu .submenu-button.submenu-opened {
+		background: url(../images/some-bg.jpg);
+	}
+
+	#cssmenu ul ul .submenu-button {
+		height: 42px;
+		width: 42px;
+	}
+
+	#cssmenu .submenu-button:after {
+		position: absolute;
+		top: 25px;
+		right: 22px;
+		width: 8px;
+		height: 2px;
+		display: block;
+		background: #baada6;
+		content: '';
+	}
+
+	#cssmenu ul ul .submenu-button:after {
+		top: 20px;
+		right: 16px;
+	}
+
+	#cssmenu .submenu-button.submenu-opened:after {
+		background: #baada6;
+	}
+
+	#cssmenu .submenu-button:before {
+		position: absolute;
+		top: 22px;
+		right: 25px;
+		display: block;
+		width: 2px;
+		height: 8px;
+		background: #baada6;
+		content: '+';
+	}
+
+	#cssmenu ul ul .submenu-button:before {
+		top: 17px;
+		right: 19px;
+	}
+
+	#cssmenu .submenu-button.submenu-opened:before {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1150px) and (min-width: 1024px) {
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px 0px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}	
+}
+
+@media screen and (max-width: 1023px) and (min-width: 851px) {
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+}
+
+@media screen and (max-width: 850px) and (min-width: 769px) {
+	#wrapper {
+		padding: 0px 50px 0px 50px;
+	}
+
+	#center {
+		display: block;
+	}
+
+	.logos-block {
+		width: auto;
+	}
+
+	.bitcoin, .lineage, .ncsoft {
+		margin: 0px 3% 20px 3%;
+		text-align: center;
+	}
+
+	#sidebar {
+		padding: 0px 5px 0px 5px;
+		width: auto;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.sideblock {
+		margin: 0px 3% 30px 3%;
+		display: inline-block;
+		vertical-align: top;
+		min-height: 400px;
+		text-align: left;
+	}
+
+	.footer-text {
+		width: 90%;
+	}
+
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+
+	.text-block {
+		padding: 30px 15px 54px 15px;
+	}
+
+	.readmore {
+		left: 15px;
+		right: 15px;
+	}
+
+	.author, .discuss {
+		margin: 0px 0px 0px 0px;
+	}
+
+	.torrent, .cloud {
+		margin: 17px 20px 0px -9px;
+		padding: 7px 5px 0px 47px;
+		white-space: nowrap;
+	}
+
+	.pagenav ul li a {
+		padding: 0px 15px 0px 15px;
+	}
+
+	#content {
+		width: auto;
+		min-height: 500px;
+		padding: 100px 0px 100px 0px;
+		text-align: justify;
+		color: #fff;
+		position: relative;
+	}
+
+	#cssmenu > ul {
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 671px) {
+	#wrapper {
+		padding: 0px 5px 0px 5px;
+	}
+
+	#center {
+		display: block;
+	}
+
+	.logos-block {
+		width: auto;
+	}
+
+	.bitcoin, .lineage, .ncsoft {
+		margin: 0px 3% 20px 3%;
+		text-align: center;
+	}
+
+	#sidebar {
+		padding: 0px 5px 0px 5px;
+		width: auto;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.sideblock {
+		margin: 0px 3% 30px 3%;
+		display: inline-block;
+		vertical-align: top;
+		min-height: 400px;
+		text-align: left;
+	}
+
+	.footer-text {
+		width: 90%;
+	}
+
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+
+	.text-block {
+		padding: 30px 15px 54px 15px;
+	}
+
+	.readmore {
+		left: 15px;
+		right: 15px;
+	}
+
+	.author, .discuss {
+		margin: 0px 0px 0px 0px;
+	}
+
+	.torrent, .cloud {
+		margin: 17px 20px 0px -9px;
+		padding: 7px 5px 0px 47px;
+		white-space: nowrap;
+	}
+
+	.pagenav ul li a {
+		padding: 0px 15px 0px 15px;
+	}
+
+	#content {
+		width: auto;
+		min-height: 500px;
+		padding: 100px 0px 100px 0px;
+		text-align: justify;
+		color: #fff;
+		position: relative;
+	}
+
+	#cssmenu > ul {
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 670px) and (min-width: 600px) {
+	#wrapper {
+		padding: 0px 5px 0px 5px;
+	}
+
+	#center {
+		display: block;
+	}
+
+	.logos-block {
+		width: auto;
+	}
+
+	.news-content {
+		background: url(../images/first-00.jpg) no-repeat top left;
+		display: block;
+		align-items: stretch;
+	}
+
+	.news h1 {
+		text-align: left;
+		font-size: 11px;
+	}
+
+	.text-block {
+		background: url(../images/img-block.png) no-repeat bottom left;
+		width: auto;
+		padding: 15px 15px 54px 15px;
+		line-height: 17px;
+		border-right: 1px solid #2e2827;
+	}
+
+	.img-block {
+		background: url(../images/first-0.jpg) no-repeat top right;
+		width: auto;
+		padding: 0px 20px 0px 20px;
+		margin: 0px 0px 0px 0px;
+		border-left: 1px solid #474343;
+	}
+
+	.image {
+		margin: 0 auto;
+		margin-top: 0px;
+		padding: 15px 0px 15px 0px;
+	}
+
+	.bitcoin, .lineage, .ncsoft {
+		margin: 0px 3% 20px 3%;
+		text-align: center;
+	}
+
+	#sidebar {
+		padding: 0px 5px 0px 5px;
+		width: auto;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.sideblock {
+		margin: 0px 2px 30px 2px;
+		display: inline-block;
+		vertical-align: top;
+		min-height: 400px;
+		text-align: left;
+	}
+
+	.footer-text {
+		width: 90%;
+	}
+
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+
+	.author, .discuss {
+		margin: 0px 0px 0px 5px;
+	}
+
+	.author {
+		margin: 0px 0px 0px 25px;
+	}
+
+	.torrent, .cloud {
+		margin: 17px 20px 0px -9px;
+		padding: 7px 5px 0px 47px;
+		white-space: nowrap;
+	}
+
+	.pagenav ul li a {
+		padding: 0px 15px 0px 15px;
+	}
+
+	#content {
+		width: auto;
+		min-height: 500px;
+		padding: 100px 0px 100px 0px;
+		text-align: justify;
+		color: #fff;
+		position: relative;
+	}
+
+	#cssmenu > ul {
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 599px) and (min-width: 551px) {
+	#wrapper {
+		padding: 0px 5px 0px 5px;
+	}
+
+	#center {
+		display: block;
+	}
+
+	.logos-block {
+		width: auto;
+	}
+
+	.news-content {
+		background: url(../images/first-00.jpg) no-repeat top left;
+		display: block;
+		align-items: stretch;
+	}
+
+	.news h1 {
+		text-align: left;
+		font-size: 11px;
+	}
+
+	.text-block {
+		background: url(../images/img-block.png) no-repeat bottom left;
+		width: auto;
+		padding: 15px 15px 54px 15px;
+		line-height: 17px;
+		border-right: 1px solid #2e2827;
+	}
+
+	.img-block {
+		background: url(../images/first-0.jpg) no-repeat top right;
+		width: auto;
+		padding: 0px 20px 0px 20px;
+		margin: 0px 0px 0px 0px;
+		border-left: 1px solid #474343;
+	}
+
+	.image {
+		margin: 0 auto;
+		margin-top: 0px;
+		padding: 15px 0px 15px 0px;
+	}
+
+	.bitcoin, .lineage, .ncsoft {
+		margin: 0px 3% 20px 3%;
+		text-align: center;
+	}
+
+	#sidebar {
+		margin: 0 auto;
+		padding: 0px 0px 0px 0px;
+	}
+
+	.footer-text {
+		width: 90%;
+	}
+
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+
+	.author, .discuss {
+		margin: 0px 0px 0px 5px;
+	}
+
+	.author {
+		margin: 0px 0px 0px 25px;
+	}
+
+	.torrent, .cloud {
+		margin: 17px 0px 0px -9px;
+		padding: 7px 5px 0px 47px;
+		white-space: nowrap;
+	}
+
+	.pagenav ul li a {
+		padding: 0px 15px 0px 15px;
+	}
+
+	#content {
+		width: auto;
+		min-height: 500px;
+		padding: 100px 0px 100px 0px;
+		text-align: justify;
+		color: #fff;
+		position: relative;
+	}
+
+	#cssmenu > ul {
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 550px) and (min-width: 501px) {
+	#wrapper {
+		padding: 0px 5px 0px 5px;
+	}
+
+	#center {
+		display: block;
+	}
+
+	.logos-block {
+		width: auto;
+	}
+
+	.news-content {
+		background: url(../images/first-00.jpg) no-repeat top left;
+		display: block;
+		align-items: stretch;
+	}
+
+	.news h1 {
+		text-align: left;
+		font-size: 11px;
+	}
+
+	.text-block {
+		background: url(../images/img-block.png) no-repeat bottom left;
+		width: auto;
+		padding: 15px 15px 54px 15px;
+		line-height: 17px;
+		border-right: 1px solid #2e2827;
+	}
+
+	.img-block {
+		background: url(../images/first-0.jpg) no-repeat top right;
+		width: auto;
+		padding: 0px 20px 0px 20px;
+		margin: 0px 0px 0px 0px;
+		border-left: 1px solid #474343;
+	}
+
+	.image {
+		margin: 0 auto;
+		margin-top: 0px;
+		padding: 15px 0px 15px 0px;
+	}
+
+	.bitcoin, .lineage, .ncsoft {
+		margin: 0px 3% 20px 3%;
+		text-align: center;
+	}
+
+	#sidebar {
+		margin: 0 auto;
+		padding: 0px 0px 0px 0px;
+	}
+
+	.footer-text {
+		width: 90%;
+	}
+
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+
+	.author, .discuss {
+		margin: 0px 0px 0px 5px;
+	}
+
+	.author {
+		margin: 0px 0px 0px 25px;
+	}
+
+	.start-game a {
+		margin: -41px 0px 0px -9px;
+		position: absolute;
+	}
+
+	.torrent, .cloud {
+		margin: 17px 0px 0px 20px;
+		padding: 7px 15px 0px 47px;
+		white-space: nowrap;
+	}
+
+	.top-files-panel {
+		padding: 0px 40px 0px 0px;
+		width: 90%;
+	}
+
+	.pagenav ul li a {
+		padding: 0px 15px 0px 15px;
+	}
+
+	#content {
+		width: auto;
+		min-height: 500px;
+		padding: 100px 0px 100px 0px;
+		text-align: justify;
+		color: #fff;
+		position: relative;
+	}
+
+	#cssmenu > ul {
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 500px) and (min-width: 426px) {
+	#wrapper {
+		padding: 0px 5px 0px 5px;
+	}
+
+	#center {
+		display: block;
+	}
+
+	.logos-block {
+		display: block;
+		width: auto;
+	}
+
+	.news-content {
+		background: url(../images/first-00.jpg) no-repeat top left;
+		display: block;
+		align-items: stretch;
+	}
+
+	.news h1 {
+		text-align: left;
+		font-size: 11px;
+	}
+
+	.text-block {
+		background: url(../images/img-block.png) no-repeat bottom left;
+		width: auto;
+		padding: 15px 15px 54px 15px;
+		line-height: 17px;
+		border-right: 1px solid #2e2827;
+	}
+
+	.img-block {
+		background: url(../images/first-0.jpg) no-repeat top right;
+		width: auto;
+		padding: 0px 20px 0px 20px;
+		margin: 0px 0px 0px 0px;
+		border-left: 1px solid #474343;
+	}
+
+	.image {
+		margin: 0 auto;
+		margin-top: 0px;
+		padding: 15px 0px 15px 0px;
+	}
+
+	.bitcoin, .lineage, .ncsoft {
+		margin: 0px 3% 20px 3%;
+		text-align: center;
+	}
+
+	#sidebar {
+		margin: 0 auto;
+		padding: 0px 0px 0px 0px;
+	}
+
+	.footer-text {
+		width: 90%;
+	}
+
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+
+	.author, .discuss {
+		display: none;
+	}
+
+	.start-game a {
+		margin: -41px 0px 0px -9px;
+		position: absolute;
+	}
+
+	.torrent, .cloud {
+		margin: 17px 0px 0px 20px;
+		padding: 7px 15px 0px 47px;
+		white-space: nowrap;
+	}
+
+	.top-files-panel {
+		padding: 0px 40px 0px 0px;
+		width: 90%;
+	}
+
+	.pagenav ul {
+		width: 113px;
+		overflow: hidden;
+	}
+
+	.pagenav ul li a {
+		padding: 0px 15px 0px 15px;
+	}
+
+	#content {
+		width: auto;
+		min-height: 500px;
+		padding: 100px 0px 100px 0px;
+		text-align: justify;
+		color: #fff;
+		position: relative;
+	}
+
+	#cssmenu > ul {
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+	#wrapper {
+		padding: 0px 5px 0px 5px;
+	}
+
+	#center {
+		display: block;
+	}
+
+	.logos-block {
+		display: block;
+		width: auto;
+	}
+
+	.news-content {
+		background: url(../images/first-00.jpg) no-repeat top left;
+		display: block;
+		align-items: stretch;
+	}
+
+	.news h1 {
+		text-align: left;
+		font-size: 11px;
+	}
+
+	.text-block {
+		background: url(../images/img-block.png) no-repeat bottom left;
+		width: auto;
+		padding: 15px 15px 54px 15px;
+		line-height: 17px;
+		border-right: 1px solid #2e2827;
+	}
+
+	.img-block {
+		background: url(../images/first-0.jpg) no-repeat top right;
+		width: auto;
+		padding: 0px 20px 0px 20px;
+		margin: 0px 0px 0px 0px;
+		border-left: 1px solid #474343;
+	}
+
+	.image {
+		margin: 0 auto;
+		margin-top: 0px;
+		padding: 15px 0px 15px 0px;
+	}
+
+	.bitcoin, .lineage, .ncsoft {
+		margin: 0px 3% 20px 3%;
+		text-align: center;
+	}
+
+	#sidebar {
+		margin: 0 auto;
+		padding: 0px 0px 0px 0px;
+	}
+
+	.footer-text {
+		width: 90%;
+	}
+
+	.my-account {
+		width: 218px;
+		height: 51px;
+		margin: 0px -100px 0px 0px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	#cssmenu {
+		margin: 0px 0px 0px 0px;
+	}
+
+	#navigation-top {
+		z-index: 10000;
+	}
+
+	.author, .discuss {
+		display: none;
+	}
+
+	.start-game a {
+		margin: -41px 0px 0px -9px;
+		position: absolute;
+	}
+
+	.torrent, .cloud {
+		margin: 17px 0px 0px -8px;
+		padding: 7px 15px 0px 47px;
+		white-space: nowrap;
+	}
+
+	.top-files-panel {
+		padding: 0px 25px 0px 0px;
+	}
+
+	.pagenav ul {
+		width: 113px;
+		overflow: hidden;
+	}
+
+	.pagenav ul li a {
+		padding: 0px 15px 0px 15px;
+	}
+
+	#content {
+		width: auto;
+		min-height: 500px;
+		padding: 100px 0px 100px 0px;
+		text-align: justify;
+		color: #fff;
+		position: relative;
+	}
+
+	#cssmenu > ul {
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 851px) {
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}	
+}
+
+@media screen and (max-width: 850px) and (min-width: 768px) {
+	#body {
+		background-size: 1700px auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top: 40px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 671px) {
+	#body {
+		background-size: 1500px auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top: 20px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}	
+}
+
+@media screen and (max-width: 670px) and (min-width: 600px) {
+	#body {
+		background-size: 1400px auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top: 20px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}
+}
+
+@media screen and (max-width: 599px) and (min-width: 551px) {
+	#body {
+		background-size: 1250px auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top:0px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}
+}
+
+@media screen and (max-width: 550px) and (min-width: 501px) {
+	#body {
+		background-size: 1150px auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top:0px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}
+}
+
+@media screen and (max-width: 500px) and (min-width: 426px) {
+	#body {
+		background-size: 1000px auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top:0px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+	#body {
+		background-size: 1700px auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 17px 75px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top:40px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}
+}
+
+@media screen and (max-width: 374px) and (min-width: 320px) {
+	#body {
+		background-size: 500% auto;
+	}
+
+	#header {
+		height: 40vh;
+	}
+
+	.languages {
+		margin: 60px 30px 0px 0px;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.logo {
+		top:30px;
+		left: 50%;
+		margin: 0px 0px 0px -183px;
+	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 320px) {
+
+	.logo:hover:before {
+		display: none;
+	}
+
+	.logo:before {
+		display: none;
+	}
+}

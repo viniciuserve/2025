@@ -1,0 +1,921 @@
+
+html,body { 
+	background:#100608 url(../images/bg-bottom.jpg) no-repeat bottom center; 
+	padding:0; 
+	margin:0; 
+	font-family: Tahoma; 
+	font-size: 12px;
+	min-width: 320px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: #090506;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #2a2429;
+}
+
+a{
+	transition: 0.5s;
+}
+
+a:hover{
+	transition: 0.5s;
+}
+
+#body {
+	background: url(../images/bg-top.jpg) no-repeat top center; 
+}
+
+#wrapper {
+	min-height: 2100px;
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 0px 20px 0px 20px;
+}
+
+#navigation-top {
+	width: 100%;
+	height: 52px;
+	background: url(../images/nav-bg.png) no-repeat top center;
+	position: relative;
+	z-index: 100;
+}
+
+.navigation-top-in {
+	max-width: 1150px;
+	height: 52px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#header {
+	max-width: 1150px;
+	height: 45vh;
+	position: relative;
+}
+
+.top-files-panel {
+	height: 58px;
+	max-width: 650px;
+	width: auto;
+	background: url(../images/files.png) no-repeat bottom right;
+	bottom: -85px;
+	position: absolute;
+	padding: 0px 30px 0px 0px;
+	z-index: 7000;
+	display: flex;
+}
+
+.start-game a {
+	display: block;
+	width: 256px;
+	height: 58px;
+	background: url(../images/startgame.png) no-repeat bottom right;
+	margin: 0px 0px 0px -10px;
+	line-height: 65px;
+	text-indent: 60px;
+	letter-spacing: 0.7px;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Georgia";
+	font-variant: small-caps;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+.start-game a:hover {
+	background: url(../images/startgame-hover.png) no-repeat bottom right;
+}
+
+.torrent	, .cloud {
+	height: 33px;
+	margin: 17px 10px 0px 10px;
+	padding: 7px 10px 0px 50px;
+}
+
+.torrent	 {
+	background: url(../images/torrent.png) no-repeat left center;
+}
+
+.cloud {
+	background: url(../images/cloud.png) no-repeat left center;
+}
+
+.torrent	 span, .cloud span{
+	display: block;
+	height: 14px;
+}
+
+.download-title a{
+	font-family: "Georgia";
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 100;
+	color: #ada0a2;
+	text-decoration: none;
+}
+
+.download-title a:hover{
+	color: #fff;
+}
+
+.file-title {
+	font-size: 10px;
+	color: #746264;
+}
+
+#center {
+	min-height: 500px;
+	max-width: 1150px;
+	display: flex;
+	position: relative;
+}
+
+#content {
+	width: 100%;
+	min-height: 500px;
+	padding: 100px 25px 100px 0px;
+	text-align: justify;
+	color: #fff;
+	position: relative;
+}
+
+#sidebar {
+	min-width: 285px;
+	width: 285px;
+	min-height: 500px;
+	padding: 140px 0px 0px 0px;
+}
+
+.news h1{
+	background: url(../images/h1.png) no-repeat top right;
+	display: block;
+	position: absolute;
+	top: 0px;
+	height: 40px;
+	margin: 0px 0px 0px -3px;
+	padding: 0px 55px 0px 70px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 44px;
+	font-family: "Times New Roman";
+	text-transform: uppercase;
+	z-index: 1;
+	color: #baada6;
+}
+
+.news h1 a{
+	color: #baada6;
+	text-decoration: none;
+}
+
+.news h1 a:hover{
+	color: #fff;
+}
+
+.news .left-01{
+	background: url(../images/left-steel.png) no-repeat top right;
+	width: 20px;
+	height: 70px;
+	left: -7px;
+	top: 15px;
+	display: block;
+	position: absolute;
+	z-index: 20;
+}
+
+.news h1 .left-02{
+	background: url(../images/left-02.png) no-repeat top left;
+	width: 70px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	display: block;
+	position: absolute;
+}
+
+.news {
+	position: relative;
+	overflow: hidden;
+	padding: 40px 0px 0px 7px;
+	margin: 0px 0px 30px -7px;
+}
+
+.news-in {
+	position: relative;
+	bottom: 0px;
+}
+
+.date-block {
+	background: url(../images/first-02.jpg) no-repeat top right;
+	position: absolute;
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	top: 18px;
+	right: 24px;
+	left: 20px;
+	text-align: right;
+	padding: 0px 20px 0px 0px;
+	margin: 0px 0px 0px 20px;
+	color: #706965;
+}
+
+.news-content {
+	background: url(../images/first-00.jpg) no-repeat top left;
+	display: flex;
+	align-items: stretch;
+}
+
+.img-block {
+	background: url(../images/img-block.png) no-repeat bottom left;
+	width: 180px;
+	min-width: 180px;
+	padding: 0px 20px 0px 20px;
+	margin: 1px 0px 0px 0px;
+}
+
+.text-block {
+	background: url(../images/first-0.jpg) no-repeat top right;
+	width: 100%;
+	padding: 30px 25px 54px 25px;
+	position: relative;
+	min-height: 170px;
+	font-family: "Times New Roman";
+	font-size: 14px;
+	letter-spacing: 0px;
+	z-index: 10;
+	color: #665a59;
+}
+
+.image {
+	width: 164px;
+	height: 177px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.image img{
+	width: 164px;
+	height: 177px;
+}
+
+.image-frame {
+	background: url(../images/img-frame.png) no-repeat center;
+	width: 164px;
+	height: 177px;
+	position: absolute;
+	z-index: 1;
+}
+
+.readmore {
+	background: url(../images/hr.jpg) repeat-x top left;
+	height: 44px;
+	line-height: 44px;
+	display: flex;
+	position: absolute;
+	left: 25px;
+	right: 25px;
+	bottom: 0px;
+	z-index: 2
+}
+
+.author, .discuss {
+	padding: 0px 10px 0px 20px;
+}
+
+.btn-light {
+	background: url(../images/btn-light.png) no-repeat bottom left;
+	width: 205px;
+	height: 140px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1
+}
+
+.triagle {
+	background: url(../images/triagle-all.png) no-repeat bottom left;
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	bottom: 5px;
+	left: 12px;
+}
+
+#content :nth-child(1) .light {
+	background: url(../images/blue-triagle.png) no-repeat bottom left !important;
+	width: 55px;
+	height: 55px;
+}
+
+#content :nth-child(2) .light {
+	background: url(../images/fiolet-triagle.png) no-repeat bottom left !important;
+	width: 55px;
+	height: 55px;
+}
+
+#content :nth-child(3) .light {
+	background: url(../images/green-triagle.png) no-repeat bottom left !important;
+	width: 55px;
+	height: 55px;
+}
+
+#content :nth-child(4) .light {
+	background: url(../images/red-triagle.png) no-repeat bottom left;
+	width: 55px;
+	height: 55px;
+}
+
+#content :nth-child(5) .light {
+	background: url(../images/yelow-triagle.png) no-repeat bottom left;
+	width: 55px;
+	height: 55px;
+}
+
+.readmore-btn a{
+	background: url(../images/readmore-btn.png) no-repeat center;
+	position: absolute;
+	right: 0px;
+	width: 121px;
+	height: 27px;
+	line-height: 28px !important;
+	text-align: center;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	margin: 10px 0px 0px 0px;
+	font-size: 12px;
+	transition: 0.5s;
+}
+
+.readmore-btn a:hover{
+	background: url(../images/readmore-hover.png) no-repeat center;
+	transition: 0.5s;
+}
+
+#content :first-child .date-block {
+	background: url(../images/first-01.jpg) no-repeat top right;
+}
+
+#content :first-child .news-content .text-block {
+	background: url(../images/first-03.jpg) no-repeat top right;
+}
+
+.text {
+	position: relative;
+	z-index: 2;
+}
+
+.author, .discuss {
+	font-size: 13px;
+}
+
+.author a, .discuss a {
+	color: #81756f;
+}
+
+.author a:hover, .discuss a:hover {
+	color: #afa1a1;
+}
+
+.author {
+	background: url(../images/user.png) no-repeat left center;
+	margin: 0px 20px 0px 0px;
+}
+
+.discuss {
+	background: url(../images/chat.png) no-repeat left center;
+}
+
+.my-account {
+	width: 218px;
+	height: 51px;
+	margin: 0px -130px 0px 0px;
+}
+
+.my-account a{
+	background: url(../images/myaccount.jpg) no-repeat left center;
+	display: block;
+	width: 218px;
+	height: 51px;
+	line-height: 52px;
+	font-family: "Georgia";
+	font-variant: small-caps;
+	color: #c4b9a0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.my-account a:hover{
+	background: url(../images/myaccount-hover.jpg) no-repeat left center;
+	color: #fff;
+}
+
+.languages a{
+	opacity: 0.7;
+}
+
+.languages a:hover{
+	opacity: 1;
+}
+
+.languages {
+	display: flex;
+	align-items: stretch;
+	margin: 15px 40px 0px 0px;
+	width: 70px;
+}
+
+.en a{
+	background: url(../images/en.png) no-repeat center;
+	display: block;
+	width: 27px;
+	height: 19px;
+	margin: 0px 2px 0px 0px;
+}
+
+.ru a{
+	background: url(../images/ru.png) no-repeat center;
+	display: block;
+	width: 27px;
+	height: 19px;
+	margin: 0px 2px 0px 0px;
+}
+
+.li a{
+	background: url(../images/li.png) no-repeat center;
+	display: block;
+	width: 27px;
+	height: 19px;
+	margin: 0px 2px 0px 0px;
+}
+
+.pagenav {
+	display: flex;
+	margin: 10px 0px 30px 0px;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.pagenav ul{
+	background: url(../images/pagenav-bg.png) repeat-x center;
+	display: flex;
+	list-style: none;
+	padding: 0px 0px 0px 0px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0px 0px 0px 0px;
+}
+
+.pagenav ul :last-child{
+	background: none;
+}
+
+.pagenav ul li{
+	background: url(../images/pn-border.png) no-repeat center right;
+}
+
+.pagenav ul li a{
+	text-decoration: none;
+	color: #737373;
+	font-family: "Times New Roman";
+	font-size: 16px;
+	padding: 0px 17px 0px 17px;
+	height: 38px;
+	line-height: 38px;
+	display: block;
+}
+
+.pagenav ul li a:hover{
+	background: url(../images/pagenav-hover.jpg) repeat-x center;
+	color: #fff;
+}
+
+.pagenav > :first-child > a {
+	background: url(../images/left-arrow.png) no-repeat center;
+	width: 99px;
+	height: 38px;
+	display: block;
+}
+
+.pagenav > :first-child > a:hover {
+	background: url(../images/left-arrow-hov.png) no-repeat center;
+}
+
+.pagenav > :last-child > a {
+	background: url(../images/right-arrow.png) no-repeat center;
+	width: 99px;
+	height: 38px;
+	display: block;
+}
+
+.pagenav > :last-child > a:hover {
+	background: url(../images/right-arrow-hov.png) no-repeat center;
+}
+
+footer {
+	margin: 20px 0px 20px 0px;
+}
+
+.footer-text {
+	font-size: "Times New Roman";
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #5a4848;
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 16px;
+	letter-spacing: 0.25px;
+}
+
+.copyright{
+	font-size: "Times New Roman";
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #a4a3a4;
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 16px;
+	padding: 40px 0px 30px 0px;
+	letter-spacing: 0.25px;
+}
+
+.logos-block {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.bitcoin, .lineage, .ncsoft {
+	margin: 0px 3% 50px 3%;
+}
+
+.logos-block a{
+	opacity: 0.5;
+}
+
+.logos-block a:hover{
+	opacity: 1;
+}
+
+.panel {
+	display: flex;
+}
+
+.sideblock {
+	background: url(../images/some-bg.jpg);
+	margin: 0px 0px 30px 0px;
+	width: 282px;
+	border: 1px solid #211c1d;
+}
+
+.sideblock-in {
+	background: url(../images/top-sideblock-1.png) no-repeat top center;
+	position: relative;
+	width: 284px;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+}
+
+#sidebar :first-child .sideblock-in {
+	background: url(../images/top-sideblock.png) no-repeat top center;
+}
+
+.sideblock-in h1{
+	text-align: center;
+	color: #a1998f;
+	font-family: "Times New Roman";
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 0px;
+	height: 44px;
+	line-height: 44px;
+}
+
+.sb-content {
+	padding: 0px 20px 15px 15px;
+}
+
+.forum-line {
+	background: url(../images/hr.jpg) repeat-x bottom;
+}
+
+.forum-news-body span{
+	padding: 2px 0px 2px 0px;
+	display: block;
+}
+
+.forum-news-body :first-child a{
+	width:200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	color: #a29087;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.forum-news-body :first-child a:hover{
+	color: #fff;
+}
+
+.forum-news-body :last-child {
+	color: #60565a;
+	font-size: 11px;
+}
+
+.forum-news-body :last-child a{
+	color: #60565a;
+}
+
+.forum-news-body :last-child a:hover{
+	color: #ad9d9d;
+}
+
+.forum-news-body {
+	background: url(../images/forum-ico.png) no-repeat left center;
+	padding: 15px 0px 15px 45px;
+}
+
+.forum-news-body p {
+	margin: 2px 0px 0px 0px;
+	float: right;
+}
+
+.player-line, .head-top-players {
+	display: flex;
+	justify-content: space-between;
+}
+
+.player-line {
+	color: #8f817a;
+	padding: 5px 0px 5px 0px;
+	font-family: "Times New Roman";
+}
+
+.head-top-players {
+	background: url(../images/hr.jpg) repeat-x bottom;
+	color: #524947;
+	padding: 10px 0px 10px 0px;
+	font-family: "Times New Roman";
+}
+
+.player-line :last-child {
+	color: #727272;
+}
+
+.player-line :first-child {
+	font-size: 13px;
+}
+
+.forum-sb > :nth-child(2) {
+	background: url(../images/gold.png) no-repeat 0px 10px;
+}
+
+
+
+.servers-sb {
+	padding-top: 20px;
+}
+
+.server .progress {
+	width: 192px;
+	height: 2px;
+	position: absolute;
+	margin: 4px 0px 0px 4px;
+}
+
+.server .progress > div {
+	width: 0;
+}
+
+.server {
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 230px;
+}
+
+/*----- Server 1 ------*/
+
+.server .progress .progress-1 {
+	background: url(../images/progress-1.png);
+	background-size: 100% auto;
+	height: 2px;
+}
+
+.server .box-1 {
+	background: url(../images/serv-bg.png) no-repeat center;
+	width: 200px;
+	height: 12px;
+	position: relative;
+}
+
+/*----- Server 2 ------*/
+
+.server .progress .progress-2 {
+	background: url(../images/progress-2.png);
+	background-size: 100% auto;
+	height: 2px;
+}
+
+.server .box-2 {
+	background: url(../images/serv-bg.png) no-repeat center;
+	width: 200px;
+	height: 12px;
+	position: relative;
+}
+
+/*----- Server 3 ------*/
+
+.server .progress .progress-3 {
+	background: url(../images/progress-3.png);
+	background-size: 100% auto;
+	height: 2px;
+}
+
+.server .box-3 {
+	background: url(../images/serv-bg.png) no-repeat center;
+	width: 200px;
+	height: 12px;
+	position: relative;
+}
+
+.on, .off {
+	width: 13px;
+	height: 12px;
+}
+
+.on {
+	background: url(../images/on.png) no-repeat center;
+}
+
+.off {
+	background: url(../images/off.png) no-repeat center;
+}
+
+.box-1, .box-2, .box-3, .off, .on {
+	display: inline-block;
+	margin: 0px 0px 0px 2px;
+}
+
+.server-info {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10px 3px 0px;
+	font-family: "Times New Roman";
+}
+
+.server-info :first-child {
+	color: #a9947b;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+}
+
+.server-info :last-child {
+	color: #bebebe;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+}
+
+.go-forum {
+	width: 187px;
+	height: 45px;
+	margin: 0 auto;
+	margin-top: -10px;
+}
+
+.go-forum a {
+	background: url(../images/go-forum.png) no-repeat center;
+	width: 187px;
+	height: 45px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	font-family: "Times New Roman";
+	font-size: 13px;
+}
+
+.go-forum a:hover {
+	background: url(../images/go-forum-hov.png) no-repeat center;
+}
+
+
+.social-line {
+	background: url(../images/hr.jpg) repeat-x bottom;
+	padding: 16px 0px 18px 45px;
+	position: relative;
+}
+
+.s-ico {
+	position: absolute;
+	left: -10px;
+	top: 14px;
+}
+
+.social-title {
+	color: #9f9192;
+	font-family: "Times New Roman";
+	font-size: 12px;
+	letter-spacing: 0.3px;
+}
+
+.social-link a{
+	color: #856969;
+	font-size: 11px;
+}
+
+.social-link a:hover {
+	color: #d4c7c7;
+}
+
+.scrollTop{  
+	display:block; 
+	width:42px; 
+	height:60px;  
+	margin:0 auto;
+	background:url(../images/to-top.png) no-repeat top center;
+	transition: 0.5s;
+}
+
+.scrollTop:hover{ 
+	background:url(../images/to-top-hov.png) no-repeat top center; 
+	transition: 0.5s;
+}
+
+#scroll-top {
+	width:42px; 
+	height:60px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#scroll-top { 
+	
+	-webkit-animation-name: spinner; 
+	-webkit-animation-timing-function: linear; 
+	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-duration: 5s; 
+	
+	animation-name: spinner;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	
+	-webkit-transform-style: preserve-3d; 
+	-moz-transform-style: preserve-3d; 
+	-ms-transform-style: preserve-3d; 
+	transform-style: preserve-3d;
+
+}
+
+.logo {
+	position: relative;
+	display: block;
+	width: 357px;
+	height: 195px;
+	top:123px;
+	left: 50%;
+	margin: 0px 0px 0px -163px;
+}
+
+.logo:hover:before {
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.logo:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 250px;
+	height: 250px;
+	top: 0;
+	left: 0;
+	background: url(../images/logo.png) no-repeat;
+	opacity: 1;
+}
